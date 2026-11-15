@@ -145,7 +145,9 @@ header.scrolled .nav{padding:10px 0}
 .card.feature .cimg{margin:0;height:auto;min-height:340px}
 .card.feature .fbody{padding:34px 34px 32px;display:flex;flex-direction:column}
 .card.feature .ic{margin:0 0 18px}
-.card.feature .fdesc{font-size:15px;color:#4a4a4a;margin-top:8px}
+.card.feature .fdesc{font-size:15.5px;color:#4a4a4a;margin-top:8px}
+.card.feature h3{font-size:42px}
+.card.feature .cimg{min-height:400px}
 .cimg{margin:-32px -28px 0;height:200px;background-size:cover;background-position:center;transition:transform .5s ease}
 .card:hover .cimg{transform:scale(1.04)}
 .cimg{background-position:center 30%}
@@ -341,12 +343,16 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
       <p class="lead">Atuação consultiva e contenciosa para pessoas, famílias e empresas.</p>
     </div>
     <div class="cards">
-      <article class="card reveal">
+      <article class="card feature reveal">
         <div class="cimg" style="background-image:url('assets/img/criminal.jpg')" role="img" aria-label="Direito Criminal"></div>
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0L7 7zm10 0l-3 7a3 3 0 0 0 6 0l-3-7zM8 21h8"/></svg></div>
-        <h3>Direito Criminal</h3>
-        <ul><li>Prisão em flagrante e audiência de custódia</li><li>Inquérito policial e ação penal</li><li>Tribunal do Júri</li><li>Recursos aos tribunais superiores</li><li>Execução penal</li></ul>
-        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+        <div class="fbody">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0L7 7zm10 0l-3 7a3 3 0 0 0 6 0l-3-7zM8 21h8"/></svg></div>
+          <p class="eyebrow" style="margin-bottom:6px">Plantão 24 horas</p>
+          <h3>Direito Criminal</h3>
+          <p class="fdesc">Defesa criminal completa, do flagrante e da audiência de custódia aos tribunais superiores, com acompanhamento da execução penal.</p>
+          <ul><li>Prisão em flagrante e audiência de custódia</li><li>Inquérito policial e ação penal</li><li>Tribunal do Júri</li><li>Recursos aos tribunais superiores</li><li>Execução penal</li></ul>
+          <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+        </div>
       </article>
       <article class="card reveal">
         <div class="cimg fade" role="img" aria-label="Família e Sucessões"><span style="background-image:url('assets/img/familia.jpg')"></span><span style="background-image:url('assets/img/divorcio.jpg')"></span></div>
@@ -383,16 +389,12 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
         <ul><li>Cobrança e execução de dívidas</li><li>Notificações extrajudiciais</li><li>Elaboração e revisão de contratos</li><li>Consultoria tributária e trabalhista</li></ul>
         <a class="more" href="atendimento/">Falar sobre minha empresa →</a>
       </article>
-      <article class="card feature reveal">
-        <div class="cimg" style="background-image:url('assets/img/servidores.jpg')" role="img" aria-label="Servidores públicos"></div>
-        <div class="fbody">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2 10l10-6 10 6"/></svg></div>
-          <p class="eyebrow" style="margin-bottom:6px">Direito Administrativo</p>
-          <h3>Servidores Públicos</h3>
-          <p class="fdesc">Defesa dos direitos de servidores municipais, estaduais e federais.</p>
-          <ul><li>Desvio e acúmulo de função</li><li>Adicional de insalubridade e periculosidade</li><li>Diferenças salariais, progressões e promoções</li><li>Processo administrativo disciplinar (PAD)</li></ul>
-          <a class="more" href="atendimento/">Falar sobre meu caso →</a>
-        </div>
+      <article class="card reveal">
+        <div class="cimg" style="background-image:url('assets/img/servidores.jpg')" role="img" aria-label="Servidores Públicos"></div>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2 10l10-6 10 6"/></svg></div>
+        <h3>Servidores Públicos</h3>
+        <ul><li>Desvio e acúmulo de função</li><li>Adicional de insalubridade e periculosidade</li><li>Diferenças salariais, progressões e promoções</li><li>Processo administrativo disciplinar (PAD)</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
     </div>
   </div>
