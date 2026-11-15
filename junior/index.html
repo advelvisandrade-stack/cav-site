@@ -84,7 +84,7 @@
 </div>
 
 <script>
-const CFG = {"nome": "Athena", "whatsapp": "5567998784200", "fone": "(67) 99878-4200", "sub": "Assistente do Dr. Júnior", "origem": "Instagram/site do Dr. Júnior", "advogado": "Dr. Genivaldo Vieira Cares Júnior", "intro": "Olá! Eu sou a <b>Athena</b>, assistente jurídica do <b>Dr. Genivaldo Vieira Cares Júnior</b>, do Cares &amp; Andrade Valentim Advogados Associados. ✨", "final": "O Dr. Júnior ou nossa equipe dará sequência ao seu atendimento."};
+const CFG = {"nome": "Athena", "whatsapp": "5567998784200", "fone": "(67) 99878-4200", "sub": "Assistente do Dr. Júnior", "origem": "Instagram/site do Dr. Júnior", "advogado": "Dr. Genivaldo Vieira Cares Júnior", "intro": "Olá! Eu sou a <b>Athena</b>, assistente jurídica do <b>Dr. Genivaldo Vieira Cares Júnior</b>, do Cares &amp; Andrade Valentim Advogados Associados. ✨", "final": "O Dr. Júnior ou a nossa equipe dará sequência ao seu atendimento."};
 const PLANTAO = "5567974008906";
 const AVATAR = document.querySelector('.avatar img').src;
 const chat = document.getElementById('chat');
@@ -167,7 +167,7 @@ const FLOWS = {
   ],
   'Trabalhista': [
     { key:'situacao', type:'options', q:'Certo. O que melhor descreve sua situação?', options:['Fui demitido(a) / verbas rescisórias','Quero sair por falta grave do empregador','Acidente ou doença do trabalho','Sou empregador e preciso de orientação','Outra situação'] },
-    { key:'vinculo', type:'options', q:'Qual a sua situação com a empresa hoje?', options:['Ainda trabalho lá','Saí há menos de 2 anos','Saí há mais de 2 anos','Sou o empregador'] },
+    { key:'vinculo', type:'options', q:'Qual a sua situação com a empresa hoje?', options:['Ainda trabalho lá','Saí há menos de dois anos','Saí há mais de dois anos','Sou o empregador'] },
     CIDADE,
   ],
   'Previdenciário (INSS)': [
@@ -176,7 +176,7 @@ const FLOWS = {
     CIDADE,
   ],
   'Cível, Consumidor e Saúde': [
-    { key:'situacao', type:'options', q:'Certo. Qual destas situações é a sua?', options:['Negativa de plano de saúde ou SUS','Cobrança ou negativação indevida','Problema com banco ou empresa','Contrato','Indenização','Outra situação'] },
+    { key:'situacao', type:'options', q:'Certo. Qual destas situações é a sua?', options:['Negativa de plano de saúde ou do SUS','Cobrança ou negativação indevida','Problema com banco ou empresa','Contrato','Indenização','Outra situação'] },
     { key:'urgencia', type:'options', q:'Existe alguma urgência? (ex.: cirurgia ou tratamento com data marcada)', options:['Sim, é urgente','Não'] },
     CIDADE,
   ],
@@ -213,8 +213,8 @@ function whatsappLink(){
 async function run(){
   Object.keys(A).forEach(k => delete A[k]);
   await bot(CFG.intro, 900);
-  await bot('Sou um atendimento automatizado: vou fazer algumas perguntas rápidas para encaminhar seu caso ao advogado certo. Leva menos de 1 minuto.');
-  await bot('Antes de tudo, como posso te chamar?', 700);
+  await bot('Sou um atendimento automatizado: vou fazer algumas perguntas rápidas para encaminhar seu caso ao advogado certo. Leva menos de um minuto.');
+  await bot('Antes de tudo, como posso chamar você?', 700);
   A.nome = await ask('Digite seu nome');
 
   await bot(`Prazer, <b>${esc(first())}</b>! Em qual destas áreas você precisa de ajuda?`);
@@ -236,7 +236,7 @@ async function run(){
   }
 
   if (A.urgente){
-    await bot(`Obrigada, <b>${esc(first())}</b>. Toque no botão abaixo para falar <b>agora</b> com o advogado de plantão pelo WhatsApp. Seu resumo já vai preenchido.`);
+    await bot(`Obrigada, <b>${esc(first())}</b>. Toque no botão abaixo para falar <b>agora</b> com o advogado de plantão pelo WhatsApp. A mensagem já vai com o seu resumo preenchido.`);
   } else {
     await bot(`Pronto, <b>${esc(first())}</b>! Toque no botão abaixo para enviar seu resumo pelo WhatsApp. ${CFG.final}`);
   }
