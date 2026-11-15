@@ -185,13 +185,18 @@ const FLOWS = {
     { key:'porte', type:'options', q:'Qual o porte da empresa?', options:['MEI','ME / EPP','Média ou grande'] },
     CIDADE,
   ],
+  'Servidor Público': [
+    { key:'situacao', type:'options', q:'Certo. Qual destas situações é a sua?', options:['Desvio ou acúmulo de função','Insalubridade ou periculosidade','Diferenças salariais, progressões ou promoções','Processo administrativo disciplinar (PAD)','Outra situação'] },
+    { key:'esfera', type:'options', q:'Você é servidor de qual esfera?', options:['Municipal','Estadual','Federal'] },
+    CIDADE,
+  ],
   'Já sou cliente': [
     { key:'advogado', type:'options', q:'Que bom ter você de volta! Com qual advogado você é atendido(a)?', options:['Dr. Elvis Andrade Valentim','Dr. Júnior Cares','Não lembro'] },
     { key:'situacao', type:'options', q: a => (CFG.advogado ? 'Que bom ter você de volta! ' : '') + 'Sobre o que você deseja falar?', options:['Andamento do processo','Enviar documentos','Agendar reunião','Financeiro','Outro assunto'] },
   ],
 };
 
-const LABELS = { situacao:'Situação', processo:'Já existe processo', vinculo:'Vínculo', inss:'Pedido no INSS', urgencia:'Urgência', porte:'Porte', advogado:'Advogado', cidade:'Cidade', relato:'Relato' };
+const LABELS = { esfera:'Esfera', situacao:'Situação', processo:'Já existe processo', vinculo:'Vínculo', inss:'Pedido no INSS', urgencia:'Urgência', porte:'Porte', advogado:'Advogado', cidade:'Cidade', relato:'Relato' };
 
 function whatsappLink(){
   const L = [];
@@ -201,7 +206,7 @@ function whatsappLink(){
   L.push('');
   L.push(`*Nome:* ${A.nome}`);
   L.push(`*Área:* ${A.area}`);
-  ['situacao','vinculo','processo','inss','urgencia','porte','advogado','cidade','relato'].forEach(k => { if (A[k]) L.push(`*${LABELS[k]}:* ${A[k]}`); });
+  ['situacao','esfera','vinculo','processo','inss','urgencia','porte','advogado','cidade','relato'].forEach(k => { if (A[k]) L.push(`*${LABELS[k]}:* ${A[k]}`); });
   return `https://wa.me/${A.urgente ? PLANTAO : CFG.whatsapp}?text=${encodeURIComponent(L.join('\n'))}`;
 }
 

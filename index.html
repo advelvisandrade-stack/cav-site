@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cares &amp; Andrade Valentim Advogados Associados · Advocacia com atuação em todo o Brasil</title>
-<meta name="description" content="Escritório de advocacia com atuação em todo o Brasil. Direito Criminal com plantão 24 horas, Família, Cível, Consumidor e Saúde, Trabalhista, Previdenciário e assessoria a empresas. Atendimento on-line em todo o país e presencial em Naviraí/MS.">
+<meta name="description" content="Escritório de advocacia com atuação em todo o Brasil. Direito Criminal com plantão 24 horas, Família, Cível, Consumidor e Saúde, Trabalhista, Previdenciário, defesa de servidores públicos e assessoria a empresas. Atendimento on-line em todo o país e presencial em Naviraí/MS.">
 <link rel="canonical" href="https://cavadvogadosassociados.com.br/">
 <link rel="icon" href="assets/favicon.png">
 <meta property="og:type" content="website">
@@ -141,6 +141,11 @@ header.scrolled .nav{padding:10px 0}
 .card{background:var(--claro);border-radius:16px;padding:32px 28px;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:.25s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.09)}
 .card{overflow:hidden}
+.card.feature{grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr;padding:0}
+.card.feature .cimg{margin:0;height:auto;min-height:340px}
+.card.feature .fbody{padding:34px 34px 32px;display:flex;flex-direction:column}
+.card.feature .ic{margin:0 0 18px}
+.card.feature .fdesc{font-size:15px;color:#4a4a4a;margin-top:8px}
 .cimg{margin:-32px -28px 0;height:200px;background-size:cover;background-position:center;transition:transform .5s ease}
 .card:hover .cimg{transform:scale(1.04)}
 .cimg{background-position:center 30%}
@@ -176,7 +181,7 @@ header.scrolled .nav{padding:10px 0}
 .socio .info{padding:28px 30px 32px}
 .socio h3{font-size:30px}
 .socio .oab{font-size:13px;letter-spacing:2px;color:var(--cinza);margin-top:4px;font-weight:500}
-.socio p{font-size:15px;color:#4a4a4a;margin-top:14px}
+.socio p{font-size:15px;color:#4a4a4a;margin-top:12px}
 .socio .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .chip{font-size:12.5px;padding:6px 12px;border-radius:30px;background:var(--branco);border:1px solid #d5d5d5;color:#333}
 .socio .btn{margin-top:22px;padding:12px 20px;font-size:14px}
@@ -234,6 +239,8 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
   .hero{padding-top:150px}
   .sobre-grid,.plantao-box,.contato-grid,.socios-grid,.foot{grid-template-columns:1fr}
   .cards,.steps{grid-template-columns:1fr}
+  .card.feature{grid-template-columns:1fr}
+  .card.feature .cimg{min-height:220px}
   .plantao .side{text-align:left}
   .hero{min-height:auto}
   .float{display:none}
@@ -376,6 +383,17 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
         <ul><li>Cobrança e execução de dívidas</li><li>Notificações extrajudiciais</li><li>Elaboração e revisão de contratos</li><li>Consultoria tributária e trabalhista</li></ul>
         <a class="more" href="atendimento/">Falar sobre minha empresa →</a>
       </article>
+      <article class="card feature reveal">
+        <div class="cimg" style="background-image:url('assets/img/servidores.jpg')" role="img" aria-label="Servidores públicos"></div>
+        <div class="fbody">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2 10l10-6 10 6"/></svg></div>
+          <p class="eyebrow" style="margin-bottom:6px">Direito Administrativo</p>
+          <h3>Servidores Públicos</h3>
+          <p class="fdesc">Defesa dos direitos de servidores municipais, estaduais e federais.</p>
+          <ul><li>Desvio e acúmulo de função</li><li>Adicional de insalubridade e periculosidade</li><li>Diferenças salariais, progressões e promoções</li><li>Processo administrativo disciplinar (PAD)</li></ul>
+          <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -416,7 +434,9 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
         <div class="info">
           <h3>Dr. Elvis Andrade Valentim</h3>
           <p class="oab">OAB/MS 30.706</p>
-          <p>Formado em Direito pela UEMS, com pós-graduação em Processo Penal, Processo Constitucional, Direito Tributário e Direito Médico e da Saúde. Atua na defesa criminal, do flagrante e da audiência de custódia aos tribunais superiores, com destaque para a execução penal, e no Direito de Família.</p>
+          <p>Formado em Direito pela Universidade Estadual de Mato Grosso do Sul, advogado com atuação jurídica desde 2020, com pós-graduação em Direito Penal e Processo Penal, Direito Constitucional e Processo Constitucional e Direito Médico e da Saúde. Atua principalmente na defesa criminal, do flagrante e da audiência de custódia aos tribunais superiores, com destaque para a execução penal.</p>
+          <p>Também tem experiência profissional nas áreas previdenciária, trabalhista e administrativa, com atuação na defesa de servidores públicos.</p>
+          <p>Sua advocacia é garantista e combativa: defende com firmeza os direitos e as garantias de cada cliente e trabalha para construir o melhor cenário possível em cada caso, sempre com ética, transparência e humanidade, os pilares de atuação do escritório.</p>
           <a class="btn btn-dark" href="elvis/">Falar com o Dr. Elvis</a>
         </div>
       </article>
@@ -425,7 +445,9 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
         <div class="info">
           <h3>Dr. Genivaldo Vieira Cares Júnior</h3>
           <p class="oab">OAB/MS 26.984</p>
-          <p>Formado em Direito pela UEMS, em Naviraí, advoga desde 2022 nas áreas cível e criminal. É coautor de publicações científicas em Direito Civil e Responsabilidade Civil e atua na assessoria a empresas e ao comércio da região.</p>
+          <p>Formado em Direito pela Universidade Estadual de Mato Grosso do Sul, advogado com atuação jurídica desde 2018 nas áreas cível e criminal. É coautor de publicações científicas em Direito Civil e Responsabilidade Civil e atua na assessoria a empresas e ao comércio da região.</p>
+          <p>Também tem experiência profissional nas áreas previdenciária, trabalhista e administrativa, incluindo a defesa de servidores públicos municipais, estaduais e federais.</p>
+          <p>Sua atuação une técnica e proximidade: uma advocacia combativa e estratégica, que busca sempre o melhor caminho para cada cliente, com ética, transparência e humanidade, os pilares de atuação do escritório.</p>
           <a class="btn btn-dark" href="junior/">Falar com o Dr. Júnior</a>
         </div>
       </article>
@@ -484,6 +506,7 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
       <details><summary>Quanto custa uma consulta ou um processo?</summary><p>Os honorários são definidos após a análise do caso, considerando sua complexidade, e observam a Tabela de Honorários da OAB/MS. Tudo é combinado de forma transparente e por escrito antes do início do trabalho.</p></details>
       <details><summary>Quais documentos devo levar no primeiro atendimento?</summary><p>Documento de identidade, CPF, comprovante de residência e todos os papéis relacionados ao caso (contratos, notificações, intimações, decisões, laudos ou carta do INSS, por exemplo). Se tiver dúvida, nossa equipe orienta pelo WhatsApp.</p></details>
       <details><summary>Minhas informações ficam em sigilo?</summary><p>Sim. O sigilo profissional é um dever do advogado, previsto no Estatuto da Advocacia e no Código de Ética da OAB. As informações também são tratadas conforme a Lei Geral de Proteção de Dados (LGPD).</p></details>
+      <details><summary>Sou servidor público e trabalho em desvio de função. Tenho direito a alguma diferença?</summary><p>O Superior Tribunal de Justiça entende que, reconhecido o desvio de função, o servidor tem direito às diferenças salariais decorrentes (Súmula 378 do STJ), sem que isso gere reenquadramento no cargo. Cada caso exige análise das atribuições exercidas e da documentação.</p></details>
       <details><summary>Vocês atendem empresas?</summary><p>Sim. Oferecemos assessoria ao comércio e às empresas da região em cobrança, contratos, notificações extrajudiciais e consultoria tributária e trabalhista preventiva.</p></details>
     </div>
   </div>
