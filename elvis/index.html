@@ -84,7 +84,7 @@
 </div>
 
 <script>
-const CFG = {"whatsapp": "5567992063698", "fone": "(67) 99206-3698", "sub": "Assistente do Dr. Elvis", "origem": "Instagram do Dr. Elvis", "advogado": "Dr. Elvis Andrade Valentim", "intro": "Olá! Eu sou a <b>Andrômeda</b>, assistente jurídica do <b>Dr. Elvis Andrade Valentim</b>, do Cares &amp; Andrade Valentim Advogados Associados. ✨", "final": "O Dr. Elvis ou nossa equipe dará sequência ao seu atendimento."};
+const CFG = {"nome": "Andrômeda", "whatsapp": "5567992063698", "fone": "(67) 99206-3698", "sub": "Assistente do Dr. Elvis", "origem": "Instagram/site do Dr. Elvis", "advogado": "Dr. Elvis Andrade Valentim", "intro": "Olá! Eu sou a <b>Andrômeda</b>, assistente jurídica do <b>Dr. Elvis Andrade Valentim</b>, do Cares &amp; Andrade Valentim Advogados Associados. ✨", "final": "O Dr. Elvis ou nossa equipe dará sequência ao seu atendimento."};
 const PLANTAO = "5567974008906";
 const AVATAR = document.querySelector('.avatar img').src;
 const chat = document.getElementById('chat');
@@ -196,7 +196,7 @@ const LABELS = { situacao:'Situação', processo:'Já existe processo', vinculo:
 function whatsappLink(){
   const L = [];
   if (A.urgente) L.push('🚨 *PLANTÃO CRIMINAL*');
-  L.push('Olá! Vim pelo atendimento da Andrômeda.');
+  L.push(`Olá! Vim pelo atendimento da ${CFG.nome}.`);
   L.push(`*Origem:* ${CFG.origem}`);
   L.push('');
   L.push(`*Nome:* ${A.nome}`);
