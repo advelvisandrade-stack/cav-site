@@ -3,46 +3,419 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cares &amp; Andrade Valentim Advogados Associados · Naviraí/MS</title>
-<meta name="description" content="Escritório de advocacia em Naviraí/MS. Atuação em Direito Criminal (plantão 24 horas), Família, Cível, Trabalhista, Previdenciário e assessoria a empresas.">
+<title>Cares &amp; Andrade Valentim Advogados Associados · Advocacia em Naviraí/MS</title>
+<meta name="description" content="Escritório de advocacia em Naviraí/MS. Direito Criminal com plantão 24 horas, Família, Cível, Consumidor e Saúde, Trabalhista, Previdenciário e assessoria a empresas. Atendimento presencial e on-line.">
+<link rel="canonical" href="https://cavadvogadosassociados.com.br/">
 <link rel="icon" href="assets/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cares & Andrade Valentim Advogados Associados">
+<meta property="og:description" content="Advocacia em Naviraí/MS · Plantão criminal 24 horas · Atendimento presencial e on-line.">
+<meta property="og:image" content="https://cavadvogadosassociados.com.br/assets/og.png">
+<meta property="og:url" content="https://cavadvogadosassociados.com.br/">
+<meta name="theme-color" content="#141414">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LegalService","name":"Cares & Andrade Valentim Advogados Associados",
- "address":{"@type":"PostalAddress","streetAddress":"Rua Faustina de Andrade da Silva, 334, Sala C","addressLocality":"Naviraí","addressRegion":"MS","postalCode":"79947-087","addressCountry":"BR"},
- "telephone":"+55-67-97400-8906","email":"cav.advogadosassociados@gmail.com","url":"https://cavadvogadosassociados.com.br",
- "sameAs":["https://www.instagram.com/cav.advogadosassociados"]}
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Cares & Andrade Valentim Advogados Associados",
+  "url": "https://cavadvogadosassociados.com.br/",
+  "logo": "https://cavadvogadosassociados.com.br/assets/favicon.png",
+  "image": "https://cavadvogadosassociados.com.br/assets/og.png",
+  "telephone": "+55-67-97400-8906",
+  "email": "cav.advogadosassociados@gmail.com",
+  "address": {"@type": "PostalAddress", "streetAddress": "Rua Faustina de Andrade da Silva, 334, Sala C", "addressLocality": "Naviraí", "addressRegion": "MS", "postalCode": "79947-087", "addressCountry": "BR"},
+  "areaServed": "Naviraí e região, Mato Grosso do Sul",
+  "sameAs": ["https://www.instagram.com/cav.advogadosassociados", "https://www.facebook.com/cav.advogadosassociados"],
+  "employee": [
+    {"@type": "Person", "name": "Elvis Andrade Valentim", "jobTitle": "Advogado · OAB/MS 30.706"},
+    {"@type": "Person", "name": "Genivaldo Vieira Cares Júnior", "jobTitle": "Advogado · OAB/MS 26.984"}
+  ]
+}
 </script>
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{min-height:100vh;font-family:'Montserrat',sans-serif;color:#fff;
-    background:radial-gradient(ellipse at 80% 20%,#3a3a3a 0%,#1f1f1f 45%,#121212 100%);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 22px}
-  img.logo{width:min(440px,82vw);height:auto}
-  h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(26px,5vw,36px);margin-top:44px;color:#ececec}
-  .areas{font-weight:300;font-size:14px;letter-spacing:2px;color:#a9a9a9;margin-top:14px;line-height:1.8}
-  .ctas{display:flex;flex-direction:column;gap:12px;margin-top:40px;width:min(380px,100%)}
-  a.btn{display:block;padding:15px 18px;border-radius:12px;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.3px}
-  a.pri{background:#fff;color:#141414}
-  a.sec{border:1.5px solid #8a8a8a;color:#fff}
-  .info{margin-top:44px;font-size:13.5px;color:#a9a9a9;line-height:1.9}
-  .info b{color:#fff;font-weight:500}
-  .soon{margin-top:30px;font-size:12px;color:#777;letter-spacing:1px}
+:root{--preto:#121212;--grafite:#1e1e1e;--grafite2:#2b2b2b;--cinza:#8a8a8a;--cinza2:#b5b5b5;--claro:#efefed;--branco:#fff;--texto:#1d1d1d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',system-ui,sans-serif;color:var(--texto);background:var(--branco);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.1}
+h2{font-size:clamp(34px,5vw,50px)}
+.eyebrow{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--cinza);font-weight:500;margin-bottom:14px}
+.lead{font-size:17px;color:#4a4a4a;max-width:640px;margin-top:16px;font-weight:400}
+section{padding:96px 0}
+.dark{background:radial-gradient(ellipse at 85% 10%,#333 0%,#1b1b1b 45%,#111 100%);color:var(--branco)}
+.dark .lead{color:#c4c4c4}
+.dark .eyebrow{color:#9a9a9a}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:10px;font:600 15px 'Montserrat',sans-serif;text-decoration:none;letter-spacing:.3px;transition:.2s;cursor:pointer}
+.btn-light{background:var(--branco);color:var(--preto)}
+.btn-light:hover{background:#e3e3e3}
+.btn-outline{border:1.5px solid #9a9a9a;color:var(--branco)}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-dark{background:var(--grafite);color:#fff}
+.btn-dark:hover{background:#000}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.25s;padding:18px 0}
+header.scrolled{background:rgba(18,18,18,.94);backdrop-filter:blur(8px);padding:10px 0;box-shadow:0 2px 14px rgba(0,0,0,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.nav img{height:44px;width:auto}
+.nav ul{list-style:none;display:flex;gap:30px;align-items:center}
+.nav ul a{color:#ddd;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.3px}
+.nav ul a:hover{color:#fff}
+.nav ul a.btn-light{color:#141414}
+.nav .btn{padding:10px 18px;font-size:13.5px}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:.2s}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 80px;position:relative;overflow:hidden}
+.hero .wm{position:absolute;right:-8vw;bottom:-10vh;width:min(720px,70vw);opacity:.06;pointer-events:none}
+.hero h1{font-size:clamp(44px,7.2vw,84px);font-weight:600;max-width:820px}
+.hero h1 em{font-style:normal;color:#bdbdbd}
+.hero .lead{font-size:18px;margin-top:22px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:28px;margin-top:56px;font-size:13.5px;color:#a9a9a9}
+.hero .meta b{display:block;color:#fff;font-size:15px;font-weight:600}
+
+/* sobre */
+.sobre-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.pilares{display:grid;gap:22px}
+.pilar{padding:24px 26px;background:var(--claro);border-radius:14px}
+.pilar h3{font-size:24px}
+.pilar p{font-size:14.5px;color:#555;margin-top:6px}
+
+/* areas */
+.areas{background:var(--claro)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.card{background:var(--branco);border-radius:16px;padding:32px 28px;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.09)}
+.card .ic{width:50px;height:50px;border-radius:12px;background:var(--grafite);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.card .ic svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:27px}
+.card ul{list-style:none;margin-top:14px;font-size:14.5px;color:#4d4d4d;flex:1}
+.card li{padding:5px 0 5px 18px;position:relative}
+.card li:before{content:'';position:absolute;left:0;top:15px;width:8px;height:1.5px;background:#999}
+.card a.more{margin-top:20px;font-size:13.5px;font-weight:600;text-decoration:none;color:var(--grafite);letter-spacing:.3px}
+.card a.more:hover{text-decoration:underline}
+
+/* plantao */
+.plantao{padding:80px 0}
+.plantao-box{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+.plantao h2 span{display:block;font-size:.55em;color:#bdbdbd;font-weight:500;margin-top:8px}
+.plantao .tel{font-family:'Montserrat';font-weight:600;font-size:clamp(26px,3.6vw,38px);letter-spacing:1px}
+.plantao .side{text-align:right}
+.plantao .side small{display:block;font-size:12px;letter-spacing:4px;color:#9a9a9a;margin-bottom:6px}
+.plantao .side .btn{margin-top:18px}
+
+/* socios */
+.socios-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.socio{border-radius:18px;overflow:hidden;background:var(--claro);display:flex;flex-direction:column}
+.foto{aspect-ratio:4/3;background:radial-gradient(circle at 30% 25%,#3a3a3a,#141414);display:flex;align-items:center;justify-content:center;position:relative}
+.foto .mono{font-family:'Cormorant Garamond';font-size:96px;color:#d6d6d6;letter-spacing:4px;font-weight:500}
+.foto .tag{position:absolute;bottom:14px;right:16px;font-size:11px;letter-spacing:3px;color:#8d8d8d}
+.socio .info{padding:28px 30px 32px}
+.socio h3{font-size:30px}
+.socio .oab{font-size:13px;letter-spacing:2px;color:var(--cinza);margin-top:4px;font-weight:500}
+.socio p{font-size:15px;color:#4a4a4a;margin-top:14px}
+.socio .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font-size:12.5px;padding:6px 12px;border-radius:30px;background:var(--branco);border:1px solid #d5d5d5;color:#333}
+.socio .btn{margin-top:22px;padding:12px 20px;font-size:14px}
+
+/* como funciona */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px}
+.step{padding:30px 28px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.step .n{font-family:'Cormorant Garamond';font-size:54px;color:#7d7d7d;line-height:1}
+.step h3{font-size:26px;margin-top:10px}
+.step p{font-size:14.5px;color:#c4c4c4;margin-top:8px}
+
+/* faq */
+.faq-list{margin-top:40px;max-width:820px}
+details{background:var(--claro);border-radius:12px;margin-bottom:12px;padding:0 24px}
+summary{cursor:pointer;list-style:none;padding:20px 30px 20px 0;font-weight:600;font-size:16px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';position:absolute;right:0;top:14px;font-size:26px;font-weight:300;color:#666;transition:.2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:#4a4a4a;font-size:15px}
+
+/* contato */
+.contato-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:stretch;margin-top:44px}
+.cinfo{display:grid;gap:22px;align-content:start}
+.cinfo div small{display:block;font-size:11.5px;letter-spacing:3px;color:var(--cinza);font-weight:600;text-transform:uppercase}
+.cinfo div span,.cinfo div a{font-size:17px;font-weight:500;text-decoration:none}
+.map{border-radius:16px;overflow:hidden;min-height:360px;background:#ddd}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;filter:grayscale(1) contrast(1.05)}
+
+/* footer */
+footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5px}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot img{height:48px;width:auto;margin-bottom:18px}
+.foot h4{color:#fff;font:600 13px 'Montserrat';letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.foot a{text-decoration:none;color:#c9c9c9}
+.foot a:hover{color:#fff}
+.foot li{list-style:none;padding:3px 0}
+.legal{margin-top:44px;padding-top:22px;font-size:12px;color:#7a7a7a;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;border-top:1px solid #262626}
+
+/* whatsapp flutuante */
+.float{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;background:var(--grafite);color:#fff;text-decoration:none;padding:13px 18px 13px 14px;border-radius:40px;box-shadow:0 6px 20px rgba(0,0,0,.3);font-weight:600;font-size:14px}
+.float svg{width:24px;height:24px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  section{padding:72px 0}
+  .nav ul{position:fixed;inset:0;background:rgba(14,14,14,.98);flex-direction:column;justify-content:center;gap:28px;display:none}
+  .nav ul.open{display:flex}
+  .nav ul a{font-size:20px}
+  .burger{display:block;position:relative;z-index:60}
+  .sobre-grid,.plantao-box,.contato-grid,.socios-grid,.foot{grid-template-columns:1fr}
+  .cards,.steps{grid-template-columns:1fr}
+  .plantao .side{text-align:left}
+  .hero{min-height:auto}
+  .float span{display:none}
+  .float{padding:14px}
+}
+@media (min-width:901px) and (max-width:1100px){ .cards{grid-template-columns:repeat(2,1fr)} }
 </style>
 </head>
 <body>
-  <img class="logo" src="assets/logo-vertical-branco.png" alt="Cares & Andrade Valentim Advogados Associados">
-  <h1>Atendimento presencial e on-line</h1>
-  <p class="areas">Criminal · Plantão 24h · Família · Cível · Trabalhista · Previdenciário · Empresas</p>
-  <div class="ctas">
-    <a class="btn pri" href="atendimento/">Iniciar atendimento</a>
-    <a class="btn sec" href="https://wa.me/5567974008906">Plantão criminal 24h · (67) 97400-8906</a>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#inicio" aria-label="Início"><img src="assets/logo-horizontal-branco.png" alt="Cares & Andrade Valentim Advogados Associados"></a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <ul id="menu" onclick="if(event.target.tagName==='A')this.classList.remove('open')">
+      <li><a href="#escritorio">O escritório</a></li>
+      <li><a href="#areas">Áreas de atuação</a></li>
+      <li><a href="#socios">Sócios</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a class="btn btn-light" href="atendimento/">Atendimento</a></li>
+    </ul>
   </div>
-  <div class="info">
-    <b>Rua Faustina de Andrade da Silva, 334, Sala C</b><br>
-    Naviraí/MS · CEP 79947-087<br>
-    cav.advogadosassociados@gmail.com · @cav.advogadosassociados
+</header>
+
+<section class="hero dark" id="inicio">
+  <img class="wm" src="assets/favicon.png" alt="">
+  <div class="wrap">
+    <p class="eyebrow">Advocacia em Naviraí/MS</p>
+    <h1>Técnica, ética e presença <em>em cada etapa do seu caso.</em></h1>
+    <p class="lead">O Cares &amp; Andrade Valentim Advogados Associados atua de forma completa nas principais áreas do Direito, com atendimento presencial e on-line e plantão criminal 24 horas.</p>
+    <div class="ctas">
+      <a class="btn btn-light" href="atendimento/">Iniciar atendimento</a>
+      <a class="btn btn-outline" href="https://wa.me/5567974008906?text=Ol%C3%A1!%20Preciso%20do%20plant%C3%A3o%20criminal.">Plantão criminal 24h</a>
+    </div>
+    <div class="meta">
+      <div><b>Plantão 24 horas</b>Prisão em flagrante e custódia</div>
+      <div><b>Presencial e on-line</b>Naviraí, região e demais comarcas</div>
+      <div><b>Full service</b>Pessoas, famílias e empresas</div>
+    </div>
   </div>
-  <p class="soon">Site completo em breve</p>
+</section>
+
+<section id="escritorio">
+  <div class="wrap sobre-grid">
+    <div class="reveal">
+      <p class="eyebrow">O escritório</p>
+      <h2>Advocacia próxima, com responsabilidade e clareza</h2>
+      <p class="lead">Nascemos da união de dois advogados com trajetórias complementares, com o propósito de oferecer uma advocacia técnica e humana a quem precisa de orientação e defesa em momentos decisivos.</p>
+      <p class="lead">Do inquérito policial aos tribunais superiores, da pensão alimentícia ao contrato da sua empresa: cada caso é conduzido com estudo, transparência e acompanhamento próximo, explicando cada passo de forma compreensível.</p>
+    </div>
+    <div class="pilares reveal">
+      <div class="pilar"><h3>Ética e sigilo</h3><p>Atuação em conformidade com o Código de Ética da OAB e absoluto sigilo sobre as informações de cada cliente.</p></div>
+      <div class="pilar"><h3>Clareza em cada etapa</h3><p>Você entende o que está acontecendo no seu caso, quais são os riscos e quais são os próximos passos.</p></div>
+      <div class="pilar"><h3>Presença</h3><p>Atendimento no escritório, on-line e plantão criminal todos os dias, inclusive fins de semana e feriados.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Áreas de atuação</p>
+      <h2>Em que podemos ajudar você</h2>
+      <p class="lead">Atuação consultiva e contenciosa, para pessoas, famílias e empresas.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0L7 7zm10 0l-3 7a3 3 0 0 0 6 0l-3-7zM8 21h8"/></svg></div>
+        <h3>Direito Criminal</h3>
+        <ul><li>Prisão em flagrante e audiência de custódia</li><li>Inquérito policial e ação penal</li><li>Tribunal do Júri</li><li>Recursos aos tribunais superiores</li><li>Execução penal</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-5h4v5"/></svg></div>
+        <h3>Família e Sucessões</h3>
+        <ul><li>Divórcio e união estável</li><li>Guarda e convivência</li><li>Pensão alimentícia</li><li>Inventário e partilha</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/><path d="M12 9v5M9.5 11.5h5"/></svg></div>
+        <h3>Cível, Consumidor e Saúde</h3>
+        <ul><li>Contratos e indenizações</li><li>Cobranças e negativações indevidas</li><li>Problemas com bancos e empresas</li><li>Negativa de plano de saúde ou SUS</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h3>Direito Trabalhista</h3>
+        <ul><li>Verbas rescisórias e horas extras</li><li>Rescisão indireta</li><li>Acidente e doença do trabalho</li><li>Orientação preventiva a empregadores</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <h3>Direito Previdenciário</h3>
+        <ul><li>Aposentadorias</li><li>BPC/LOAS</li><li>Auxílio por incapacidade</li><li>Salário-maternidade e pensão por morte</li></ul>
+        <a class="more" href="atendimento/">Falar sobre meu caso →</a>
+      </article>
+      <article class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M8 11h.01M12 11h.01M16 11h.01"/></svg></div>
+        <h3>Empresas e Comércio</h3>
+        <ul><li>Cobrança e execução de dívidas</li><li>Notificações extrajudiciais</li><li>Elaboração e revisão de contratos</li><li>Consultoria tributária e trabalhista</li></ul>
+        <a class="more" href="atendimento/">Falar sobre minha empresa →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="plantao dark">
+  <div class="wrap plantao-box reveal">
+    <div>
+      <p class="eyebrow">Direito Criminal</p>
+      <h2>Plantão Criminal 24 horas<span>Prisão em flagrante e audiência de custódia, todos os dias, inclusive fins de semana e feriados.</span></h2>
+    </div>
+    <div class="side">
+      <small>PLANTÃO</small>
+      <div class="tel">(67) 97400-8906</div>
+      <a class="btn btn-light" href="https://wa.me/5567974008906?text=Ol%C3%A1!%20Preciso%20do%20plant%C3%A3o%20criminal.">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="socios">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Sócios</p>
+      <h2>Quem cuida do seu caso</h2>
+    </div>
+    <div class="socios-grid">
+      <article class="socio reveal">
+        <div class="foto"><span class="mono">EAV</span><span class="tag">FOTO EM BREVE</span></div>
+        <div class="info">
+          <h3>Dr. Elvis Andrade Valentim</h3>
+          <p class="oab">OAB/MS 30.706</p>
+          <p>Formado em Direito pela UEMS, com pós-graduação em Processo Penal, Processo Constitucional, Direito Tributário e Direito Médico e da Saúde. Atua na defesa criminal, do flagrante e da audiência de custódia aos tribunais superiores, com destaque para a execução penal, e no Direito de Família.</p>
+          <div class="chips"><span class="chip">Criminal</span><span class="chip">Execução penal</span><span class="chip">Tribunal do Júri</span><span class="chip">Família</span><span class="chip">Saúde</span></div>
+          <a class="btn btn-dark" href="elvis/">Falar com o Dr. Elvis</a>
+        </div>
+      </article>
+      <article class="socio reveal">
+        <div class="foto"><span class="mono">JC</span><span class="tag">FOTO EM BREVE</span></div>
+        <div class="info">
+          <h3>Dr. Júnior Cares</h3>
+          <p class="oab">OAB/MS 26.984</p>
+          <p>Formado em Direito pela UEMS, em Naviraí, advoga desde 2022 nas áreas cível e criminal. É coautor de publicações científicas em Direito Civil e Responsabilidade Civil e atua na assessoria a empresas e ao comércio da região.</p>
+          <div class="chips"><span class="chip">Cível</span><span class="chip">Criminal</span><span class="chip">Responsabilidade civil</span><span class="chip">Empresas</span></div>
+          <a class="btn btn-dark" href="junior/">Falar com o Dr. Júnior</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Do primeiro contato ao acompanhamento</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Contato</h3><p>Fale com a nossa assistente jurídica Andrômeda ou chame direto no WhatsApp. Ela organiza as informações iniciais e direciona seu caso.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Análise</h3><p>Um advogado avalia a situação, explica as possibilidades, os riscos e o caminho mais adequado, presencialmente ou on-line.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>Acompanhamento</h3><p>Você é informado sobre cada etapa importante do seu caso, com linguagem clara e canal direto com a equipe.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h2>Dúvidas comuns</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>Vocês atendem de madrugada, fins de semana e feriados?</summary><p>Sim, para casos criminais urgentes, como prisão em flagrante e audiência de custódia. O plantão funciona 24 horas pelo telefone e WhatsApp (67) 97400-8906, com escala entre os advogados do escritório.</p></details>
+      <details><summary>Alguém da minha família foi preso. O que devo fazer?</summary><p>Entre em contato com o plantão o quanto antes. Toda pessoa presa tem direito de permanecer em silêncio, de ter a família comunicada e de ser assistida por advogado (Constituição Federal, art. 5º, LXII e LXIII). Separe documentos pessoais, comprovante de residência e de trabalho da pessoa presa.</p></details>
+      <details><summary>É possível ser atendido on-line?</summary><p>Sim. Atendemos presencialmente em Naviraí/MS e on-line, por videochamada e WhatsApp, o que permite acompanhar clientes de outras cidades e comarcas.</p></details>
+      <details><summary>Vocês atuam em outras cidades?</summary><p>Sim. Além de Naviraí e região, atuamos em outras comarcas e na Justiça Federal, conforme a necessidade de cada caso, inclusive com recursos aos tribunais superiores.</p></details>
+      <details><summary>Quanto custa uma consulta ou um processo?</summary><p>Os honorários são definidos após a análise do caso, considerando sua complexidade, e observam a Tabela de Honorários da OAB/MS. Tudo é combinado de forma transparente e por escrito antes do início do trabalho.</p></details>
+      <details><summary>Quais documentos devo levar no primeiro atendimento?</summary><p>Documento de identidade, CPF, comprovante de residência e todos os papéis relacionados ao caso (contratos, notificações, intimações, decisões, laudos ou carta do INSS, por exemplo). Se tiver dúvida, nossa equipe orienta pelo WhatsApp.</p></details>
+      <details><summary>Minhas informações ficam em sigilo?</summary><p>Sim. O sigilo profissional é um dever do advogado, previsto no Estatuto da Advocacia e no Código de Ética da OAB. As informações também são tratadas conforme a Lei Geral de Proteção de Dados (LGPD).</p></details>
+      <details><summary>Vocês atendem empresas?</summary><p>Sim. Oferecemos assessoria ao comércio e às empresas da região em cobrança, contratos, notificações extrajudiciais e consultoria tributária e trabalhista preventiva.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="contato">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Contato</p>
+      <h2>Venha nos visitar</h2>
+    </div>
+    <div class="contato-grid">
+      <div class="cinfo reveal">
+        <div><small>Endereço</small><span>Rua Faustina de Andrade da Silva, 334, Sala C<br>Naviraí/MS · CEP 79947-087</span></div>
+        <div><small>WhatsApp e plantão 24h</small><a href="https://wa.me/5567974008906">(67) 97400-8906</a></div>
+        <div><small>E-mail</small><a href="mailto:cav.advogadosassociados@gmail.com">cav.advogadosassociados@gmail.com</a></div>
+        <div><small>Redes sociais</small><a href="https://www.instagram.com/cav.advogadosassociados">@cav.advogadosassociados</a></div>
+        <div><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Rua+Faustina+de+Andrade+da+Silva,+334,+Navira%C3%AD+-+MS">Como chegar</a></div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa do escritório" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua+Faustina+de+Andrade+da+Silva,+334,+Navira%C3%AD+-+MS,+79947-087&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="assets/logo-horizontal-branco.png" alt="Cares & Andrade Valentim Advogados Associados">
+        <p>Advocacia em Naviraí/MS. Atendimento presencial e on-line e plantão criminal 24 horas.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#escritorio">O escritório</a></li><li><a href="#areas">Áreas de atuação</a></li><li><a href="#socios">Sócios</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="atendimento/">Atendimento</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul><li>Rua Faustina de Andrade da Silva, 334, Sala C</li><li>Naviraí/MS · 79947-087</li><li><a href="https://wa.me/5567974008906">(67) 97400-8906</a></li><li><a href="mailto:cav.advogadosassociados@gmail.com">cav.advogadosassociados@gmail.com</a></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano"></span> Cares &amp; Andrade Valentim Advogados Associados · Dr. Elvis Andrade Valentim, OAB/MS 30.706 · Dr. Júnior Cares, OAB/MS 26.984</span>
+      <a href="privacidade.html">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<a class="float" href="atendimento/" aria-label="Atendimento">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8.9-.3.2-.5 0a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.4a.8.8 0 0 0-.6.3 2.5 2.5 0 0 0-.8 1.9 4.4 4.4 0 0 0 .9 2.3 10 10 0 0 0 3.8 3.4c1.4.6 2 .6 2.7.5a2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3z"/></svg>
+  <span>Fale com a Andrômeda</span>
+</a>
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+const h = document.getElementById('top');
+const onS = () => h.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onS, {passive:true}); onS();
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
