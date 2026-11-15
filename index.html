@@ -143,6 +143,11 @@ header.scrolled .nav{padding:10px 0}
 .card{overflow:hidden}
 .cimg{margin:-32px -28px 0;height:200px;background-size:cover;background-position:center;transition:transform .5s ease}
 .card:hover .cimg{transform:scale(1.04)}
+.cimg{background-position:center 30%}
+.cimg.fade{position:relative}
+.cimg.fade span{position:absolute;inset:0;background-size:cover;background-position:center 30%;animation:xf 10s infinite}
+.cimg.fade span:nth-child(2){animation-delay:-5s}
+@keyframes xf{0%,40%{opacity:1}50%,90%{opacity:0}100%{opacity:1}}
 .card .ic{width:54px;height:54px;border-radius:12px;background:var(--grafite);display:flex;align-items:center;justify-content:center;margin:-27px 0 18px;position:relative;z-index:1;border:3px solid var(--claro)}
 .card .ic svg{width:25px;height:25px;stroke:#fff;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .card h3{font-size:27px}
@@ -164,7 +169,8 @@ header.scrolled .nav{padding:10px 0}
 /* socios */
 .socios-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
 .socio{border-radius:18px;overflow:hidden;background:var(--claro);display:flex;flex-direction:column}
-.foto{aspect-ratio:4/3;background:radial-gradient(circle at 30% 25%,#3a3a3a,#141414);display:flex;align-items:center;justify-content:center;position:relative}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.foto{aspect-ratio:4/4.2;background:radial-gradient(circle at 30% 25%,#3a3a3a,#141414);display:flex;align-items:center;justify-content:center;position:relative}
 .foto .mono{font-family:'Cormorant Garamond';font-size:96px;color:#d6d6d6;letter-spacing:4px;font-weight:500}
 .foto .tag{position:absolute;bottom:14px;right:16px;font-size:11px;letter-spacing:3px;color:#8d8d8d}
 .socio .info{padding:28px 30px 32px}
@@ -329,42 +335,42 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
     </div>
     <div class="cards">
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/7876197/pexels-photo-7876197.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Direito Criminal"></div>
+        <div class="cimg" style="background-image:url('assets/img/criminal.jpg')" role="img" aria-label="Direito Criminal"></div>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0L7 7zm10 0l-3 7a3 3 0 0 0 6 0l-3-7zM8 21h8"/></svg></div>
         <h3>Direito Criminal</h3>
         <ul><li>Prisão em flagrante e audiência de custódia</li><li>Inquérito policial e ação penal</li><li>Tribunal do Júri</li><li>Recursos aos tribunais superiores</li><li>Execução penal</li></ul>
         <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/35858303/pexels-photo-35858303.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Família e Sucessões"></div>
+        <div class="cimg fade" role="img" aria-label="Família e Sucessões"><span style="background-image:url('assets/img/familia.jpg')"></span><span style="background-image:url('assets/img/divorcio.jpg')"></span></div>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-5h4v5"/></svg></div>
         <h3>Família e Sucessões</h3>
         <ul><li>Divórcio e união estável</li><li>Guarda e convivência</li><li>Pensão alimentícia</li><li>Inventário e partilha</li></ul>
         <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/6129441/pexels-photo-6129441.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Cível, Consumidor e Saúde"></div>
+        <div class="cimg" style="background-image:url('assets/img/saude.jpg')" role="img" aria-label="Cível, Consumidor e Saúde"></div>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/><path d="M12 9v5M9.5 11.5h5"/></svg></div>
         <h3>Cível, Consumidor e Saúde</h3>
         <ul><li>Contratos e indenizações</li><li>Cobranças e negativações indevidas</li><li>Problemas com bancos e empresas</li><li>Negativa de plano de saúde ou SUS</li></ul>
         <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/32845698/pexels-photo-32845698.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Direito Trabalhista"></div>
+        <div class="cimg" style="background-image:url('assets/img/trabalhista.jpg')" role="img" aria-label="Direito Trabalhista"></div>
         <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
         <h3>Direito Trabalhista</h3>
         <ul><li>Verbas rescisórias e horas extras</li><li>Rescisão indireta</li><li>Acidente e doença do trabalho</li><li>Orientação preventiva a empregadores</li></ul>
         <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/5790832/pexels-photo-5790832.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Direito Previdenciário"></div>
+        <div class="cimg" style="background-image:url('assets/img/previdenciario.jpg')" role="img" aria-label="Direito Previdenciário"></div>
         <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
         <h3>Direito Previdenciário</h3>
         <ul><li>Aposentadorias</li><li>BPC/LOAS</li><li>Auxílio por incapacidade</li><li>Salário-maternidade e pensão por morte</li></ul>
         <a class="more" href="atendimento/">Falar sobre meu caso →</a>
       </article>
       <article class="card reveal">
-        <div class="cimg" style="background-image:url('https://images.pexels.com/photos/9490632/pexels-photo-9490632.jpeg?auto=compress&cs=tinysrgb&w=800')" role="img" aria-label="Empresas e Comércio"></div>
+        <div class="cimg" style="background-image:url('assets/img/empresas.jpg')" role="img" aria-label="Empresas e Comércio"></div>
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6M8 11h.01M12 11h.01M16 11h.01"/></svg></div>
         <h3>Empresas e Comércio</h3>
         <ul><li>Cobrança e execução de dívidas</li><li>Notificações extrajudiciais</li><li>Elaboração e revisão de contratos</li><li>Consultoria tributária e trabalhista</li></ul>
@@ -384,7 +390,7 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
   </div>
 </section>
 
-<section class="plantao dark" style="background:#0d0d0d">
+<section class="plantao dark" style="background:linear-gradient(90deg,rgba(10,10,10,.96) 0%,rgba(10,10,10,.88) 55%,rgba(10,10,10,.7) 100%),url('assets/img/plantao.jpg') center/cover">
   <div class="wrap plantao-box reveal">
     <div>
       <p class="eyebrow">Direito Criminal</p>
@@ -406,7 +412,7 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
     </div>
     <div class="socios-grid">
       <article class="socio reveal">
-        <div class="foto"><span class="mono">EAV</span><span class="tag">FOTO EM BREVE</span></div>
+        <div class="foto"><img src="assets/img/dr-elvis.jpg" alt="Dr. Elvis Andrade Valentim" loading="lazy"></div>
         <div class="info">
           <h3>Dr. Elvis Andrade Valentim</h3>
           <p class="oab">OAB/MS 30.706</p>
@@ -415,7 +421,7 @@ footer{background:var(--preto);color:#a9a9a9;padding:60px 0 34px;font-size:13.5p
         </div>
       </article>
       <article class="socio reveal">
-        <div class="foto"><span class="mono">JC</span><span class="tag">FOTO EM BREVE</span></div>
+        <div class="foto"><img src="assets/img/dr-junior.jpg" alt="Dr. Júnior Cares" loading="lazy"></div>
         <div class="info">
           <h3>Dr. Júnior Cares</h3>
           <p class="oab">OAB/MS 26.984</p>
