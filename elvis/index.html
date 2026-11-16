@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-cav-base="../" data-cav-banner="top">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -242,6 +242,7 @@ async function run(){
   }
   const box = document.createElement('div'); box.className = 'options';
   box.innerHTML = `<a class="cta" href="${whatsappLink()}" target="_blank" rel="noopener">${A.urgente ? '🚨 Falar com o plantão agora' : 'Enviar pelo WhatsApp'}</a>`;
+  box.querySelector('.cta').addEventListener('click', () => window.cavTrack && window.cavTrack('generate_lead', { area: A.area, assistente: CFG.nome, plantao: A.urgente ? 'sim' : 'nao' }));
   chat.appendChild(box);
   const note = document.createElement('div'); note.className = 'note';
   note.innerHTML = (A.urgente ? 'Plantão: (67) 97400-8906' : 'WhatsApp: ' + CFG.fone) + ' · Rua Faustina de Andrade da Silva, 334, Sala C, Naviraí/MS<br>Atendimento automatizado de triagem. Não constitui consulta jurídica. Suas informações são usadas apenas para o seu atendimento.';
@@ -253,5 +254,6 @@ async function run(){
 
 run();
 </script>
+<script src="../assets/cav-analytics.js"></script>
 </body>
 </html>
