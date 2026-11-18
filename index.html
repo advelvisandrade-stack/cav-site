@@ -70,6 +70,12 @@ header.scrolled .nav img{height:60px}
 .nav ul{list-style:none;display:flex;gap:30px;align-items:center}
 .nav ul a{color:#ddd;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.3px}
 .nav ul a:hover{color:#fff}
+.nav ul a{white-space:nowrap}
+.nav>a{flex-shrink:0}.nav img{flex-shrink:0;object-fit:contain}
+@media (min-width:901px) and (max-width:1100px){.nav img{height:70px}header.scrolled .nav img{height:52px}}
+@media (min-width:901px) and (max-width:1020px){.nav img{height:56px}header.scrolled .nav img{height:46px}.nav ul{gap:14px}.nav ul a{font-size:13px}}
+.nav{gap:24px}
+@media (min-width:901px) and (max-width:1240px){.nav ul{gap:18px}.nav ul a{font-size:13.5px;letter-spacing:0}.nav .btn{padding:9px 14px}}
 .nav ul a.btn-light{color:#141414}
 .nav .btn{padding:10px 18px;font-size:13.5px}
 .burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
@@ -228,9 +234,9 @@ footer .redes a:hover{background:#fff;color:#141414;border-color:#fff}
 
 /* footer */
 .foot-fachada + .wrap{margin-top:10px;position:relative}
-.foot-fachada{height:420px;background:url('assets/img/fachada.jpg') 50% 42%/cover no-repeat;position:relative}
-.foot-fachada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,17,.15) 0%,rgba(17,17,17,.1) 45%,rgba(18,18,18,.75) 80%,var(--preto) 100%)}
-@media (max-width:860px){.foot-fachada{height:280px;background-position:22% 40%}}
+.foot-fachada{height:480px;background:url('assets/img/fachada.jpg') 50% 42%/cover no-repeat;position:relative}
+.foot-fachada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--claro) 0%,rgba(239,239,237,.82) 8%,rgba(239,239,237,.45) 18%,rgba(239,239,237,.12) 30%,rgba(18,18,18,.05) 38%,rgba(18,18,18,.1) 50%,rgba(18,18,18,.75) 80%,var(--preto) 100%)}
+@media (max-width:860px){.foot-fachada{height:330px;background-position:22% 40%}}
 footer{background:var(--preto);color:#a9a9a9;padding:0 0 34px;font-size:13.5px}
 .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
 .foot img{height:80px;width:auto;margin-bottom:18px}
