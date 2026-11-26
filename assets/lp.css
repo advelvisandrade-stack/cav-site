@@ -110,3 +110,11 @@ section{padding:clamp(60px,8vw,96px) 0}
   .socio img{width:86px;height:104px}
 }
 .cards:has(>li:nth-child(4):last-child){grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+
+/* faixa de destaque */
+.faixa{padding:0 0 clamp(20px,3vw,32px);background:var(--claro)}
+.faixa-box{background:#fff;border:1.5px solid var(--linha);border-top:5px solid var(--destaque);border-radius:14px;padding:clamp(26px,4vw,44px);box-shadow:0 16px 36px -26px rgba(0,0,0,.35)}
+.faixa-tag{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--destaque);font-weight:700;margin-bottom:10px}
+.faixa h2{font-size:clamp(30px,4vw,42px)}
+.faixa-txt{font-size:clamp(17px,1.8vw,19px);color:#2d2d2d;margin-top:14px;max-width:46em}
+.faixa-ref{font-size:13.5px;color:#666;margin-top:14px;max-width:60em}
