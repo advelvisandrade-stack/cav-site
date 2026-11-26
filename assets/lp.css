@@ -71,7 +71,7 @@ section{padding:clamp(60px,8vw,96px) 0}
 /* sócios */
 .socios{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));margin-top:44px}
 .socio{display:flex;gap:20px;align-items:flex-start;background:#fff;border:1.5px solid var(--linha);border-radius:14px;padding:22px}
-.socio img{width:110px;height:130px;object-fit:cover;border-radius:10px;flex-shrink:0;filter:grayscale(1)}
+.socio img{width:150px;height:180px;object-fit:cover;border-radius:10px;flex-shrink:0;filter:grayscale(1)}
 .socio .oab{font-size:13px;color:var(--cinza);margin:4px 0 8px;letter-spacing:.5px}
 .socio p{font-size:14.5px;color:var(--suave)}
 
