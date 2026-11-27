@@ -164,3 +164,15 @@ section{padding:clamp(60px,8vw,96px) 0}
 @keyframes entra-foto{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
 .js .wa-flutuante{transition:opacity .3s,transform .3s,background .2s}
 .js .wa-flutuante:not(.on){opacity:0;transform:translateY(16px);pointer-events:none}
+
+/* título do produto em caixa alta + chamada */
+.hero h1{letter-spacing:.02em;line-height:1.02}
+.chamada{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:clamp(24px,2.6vw,34px);line-height:1.2;color:#3a3a3a;margin-top:12px;text-wrap:balance}
+@media(min-width:900px){.hero h1{font-size:clamp(40px,4vw,56px)}}
+@media (prefers-reduced-motion:no-preference){.hero .wrap>div:first-child>*:nth-child(7){animation-delay:.62s}}
+.hero h1 .nw{white-space:nowrap}
+@media(min-width:900px){.hero h1{font-size:clamp(36px,3.3vw,50px)}}
+@media(max-width:899px){.hero h1{font-size:clamp(30px,8.4vw,44px)}}
+.hero .wrap>div:first-child{min-width:0}
+@media(min-width:900px){.hero h1{font-size:clamp(34px,3vw,46px)}}
+@media(max-width:899px){.hero h1{font-size:clamp(24px,7vw,44px)}}
